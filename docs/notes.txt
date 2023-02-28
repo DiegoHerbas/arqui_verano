@@ -1,0 +1,23 @@
+MANDATO:
+Realizar la fase de diseño (diseño de la base de datos, diseño de la arquitectura, - diseño de la interfaz, - diseño del detalle procedimental) utilizando patrones de arquitectura, patrones de diseno, codificacion en el lenguaje de su preferencia.
+
+PROBLEMA:
+Cine Sur, necesita registrar la venta de boletos para el cine. Cada boleto es para una sola pelicula y para un solo cliente. En el boleto, estan los siguientes datos. Nro de boleta, fecha, hora de inicio, el numero de asiento, datos del cliente, asi como datos de la pelicula.
+
+Entre las exigencias (reglas de negocio)
+1. Debe poder definir la forma de pago en tiempo de ejecucion. Si es al contado tiene un descuento del 20%, si es con tarjeta de credito un 15%.
+2. El boleto, cuando se crea, esta en reservado, luego pasa a pagado y luego a entregado, en ese orden, sin poder regresar al estado anterior.
+
+
+	Pelicula <--- Boleto ---> Cliente
+	
+	Boleto
+		- Nro de boleta
+		- Fecha
+		- hora de inicio
+		- el numero de asiento
+		- cliente
+		- datos de la pelicula
+		- forma de pago
+		- precio
+
